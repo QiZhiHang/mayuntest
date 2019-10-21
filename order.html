@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<title>确认订单</title>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body style="background: #fff;">
+	<div class="">
+		<a href="">
+			<div class="site_list">
+				<div class="site_img">
+					<img src="images/indsite.png">
+				</div>
+				<div class="site_content">
+					<div class="name_tel">
+						<div class="name">
+							<p>收货人：小仙女</p>
+						</div>
+						<div class="tel">
+							<p>13912312104</p>
+						</div>
+					</div>
+					<p class="site">收货地址：河南省郑州市金水区东风东路与如意西路交叉口东南角建业总部港B座三楼</p>
+				</div>
+				<div class="site_right">
+					<img src="images/my_rightlist.png">
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="no_site">
+		<a href="address_site_list.html">
+			<p><img src="images/jia.png">添加收货地址</p>
+		</a>
+	</div>
+
+
+	<div class="caitiao">
+		<img src="images/caitiao.png">
+	</div>
+
+		<div class="order_list">
+			<div class="collect_shop">
+				<div class="left">
+					<img src="images/shop.jpg">
+				</div>
+				<div class="right">
+					<div class="title">
+						<p>小米九号平衡车成人体感智能骑行遥控漂移代步平衡车22公里超长续航</p>
+					</div>
+					<div class="comment_shop_bottom">
+						<div class="fenlei">
+							<p class="lei">电压:36V</p>
+							<p class="list">颜色分类:九号平衡车黑+小米拉杆</p>
+						</div>
+						<div class="money">
+							<p class="original_cost">¥<span>1000</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+
+	<div class="order_shop_nub order_number">
+		<div class="title">
+			<p>购买数量</p>
+		</div>
+		<div class="nub clear ">
+			<p class="number"><img class="add fr" src="images/add.jpg"><span class="number_vul fr">2</span><img class="jian fr" src="images/jian.jpg"></p>
+		</div>
+	</div>
+	<div class="order_shop_nub Pattern">
+		<div class="title">
+			<p>配送方式</p>
+		</div>
+		<div class="nub">
+			<p>
+				<!-- <span>快递（邮费<span class="you_money">10</span>元）</span> -->
+				<span>请选择配送方式</span>
+				<img src="images/my_rightlist.png"></p>
+		</div>
+	</div>
+	<div class="order_shop_nub">
+		<div class="title">
+			<p>买家留言</p>
+		</div>
+		<div class="nub">
+			<input type="text" value="" placeholder="选填：填写内容已和卖家确认">
+		</div>
+	</div>
+	<div class="order_bottom">
+		<p><span>共 <span class="number_vul">1</span>件商品</span><span>小计：</span><span class="order_money_fuhao">¥</span><span class="order_money"></span><span class="zhuangtai">（含运费）</span></p>
+	</div>
+
+<div class="order_bottom_btn">
+	<div class="money">
+		<p>合计金额：<span>￥</span><span class="order_bottom_money"></span></p>
+	</div>
+	<div class="order_btn">
+		<p>立即支付</p>
+	</div>
+</div>
+
+
+<div class="deposit_Tan">  
+<!-- 支付方式弹窗 -->
+	<div class="top">
+		<img src="images/del.png">
+		<p class="title">确认付款</p>
+	</div>
+	<div class="tan_money" style="border-bottom: none;">
+		<!-- <p class="title">提现金额</p> -->
+		<p class="money " style="text-align: center;">￥ <span class="money_Tan"></span></p>
+	</div>
+	<div class="tan_bottom">
+		<!-- <p class="keyi">可提现金额：0.00元</p> -->
+		<p class="fangshi_title">支付方式</p>
+		<div class="zhifubao_list clear">
+			<label>
+				<div class="left">
+					<p><img src="images/zhifubao.png">支付宝</p>
+				</div>
+				<div class="right">
+					<input type="radio" name="radio" value="1" checked="checked">
+				</div>
+			</label>
+			
+		</div>
+		<div class="weixin_list clear">
+			<label>
+				<div class="left">
+					<p><img src="images/weixin.png">微信</p>
+				</div>
+				<div class="right">
+					<input type="radio" name="radio" value="2">
+				</div>
+			</label>
+			
+		</div>
+	</div>
+	<div class="deposit_Btn">
+		<a href="order_info.html"><p>立即支付</p></a>
+	</div>
+</div>
+<div class="bg"></div>
+<div class="Pattern_Tan">  
+<!-- 配送方式弹窗 -->
+	<div class="top">
+		<img src="images/del.png">
+		<p class="title">请选择配送方式</p>
+	</div>
+	<div class="Pattern_list">
+		<ul>
+			<li>
+				<label>
+					<div class="left">
+						<p><img src="images/activity4.png"><span class="qu_fs">自取</span></p>
+					</div>
+					<div class="right">
+						<input type="radio" name="pattern">
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<div class="left">
+						<p><img src="images/activity4.png"><span class="qu_fs">同城·快递</span></p>
+					</div>
+					<div class="right">
+						<input type="radio" name="pattern">
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<div class="left">
+						<p><img src="images/activity4.png"><span class="qu_fs">验证码</span></p>
+					</div>
+					<div class="right">
+						<input type="radio" name="pattern">
+					</div>
+				</label>
+			</li>
+		</ul>
+	</div>
+	<div class="deposit_Btn">
+		<p>确定</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="swiper/swiper.min.js"></script>
+<script type="text/javascript" src="js/ind.js"></script>
+<script type="text/javascript">
+		var n=$('.number_vul').html();
+		console.log(n)
+    	// var num=parseInt(n)+1;
+    	var original_cost = $('.original_cost').find('span').html() //原价
+    	var money = original_cost*n; 
+    	// $('.number_vul').html(num);
+    	$('.order_money').html(money)
+    	$('.order_bottom_money').html(money)
+    	$('.money_Tan').html(money)
+
+	$('.number .add').click(function () {
+		// alert('加')  没加邮费
+		var n=$('.number_vul').html();
+		console.log(n)
+    	var num=parseInt(n)+1;
+    	var original_cost = $('.original_cost').find('span').html()
+    	var money = num*original_cost;
+    	if(num==0){ return;}
+    	$('.number_vul').html(num);
+    	$('.order_money').html(money)
+    	$('.order_bottom_money').html(money)
+    	$('.money_Tan').html(money)
+	})
+		// var n=$('.number_vul').html();
+
+		// // var num=parseInt(n)+1;
+  //   	var original_cost = $('.original_cost').find('span').html()
+  //   	var money =original_cost;
+		// $('.order_money').html(money)
+  //   	$('.order_bottom_money').html(money)
+  //   	$('.money_Tan').html(money)
+	$('.number .jian').click(function () {
+		// alert('减')
+		var n=$('.number_vul').html();
+		console.log(n)
+    	var num=parseInt(n)-1;
+    	var original_cost = $('.original_cost').find('span').html()
+    	var money = parseInt(num*original_cost);
+
+    	if(num==0){ return;}
+    	$('.number_vul').html(num);
+    	$('.order_money').html(money)
+    	$('.order_bottom_money').html(money)
+    	$('.money_Tan').html(money)
+
+	})
+
+
+
+
+
+
+	$('.Pattern').click(function(){ //配送方式弹窗
+		$('.Pattern_Tan').addClass('active');
+		$('.bg').addClass('active');
+	})
+
+	$('.Pattern_Tan .top img').click(function () {
+		$('.Pattern_Tan').removeClass('active');
+		$('.bg').removeClass('active');
+	})
+	$('.Pattern_Tan .deposit_Btn').click(function () {
+		$('.Pattern_Tan').removeClass('active');
+		$('.bg').removeClass('active');
+	})
+
+
+
+
+
+
+
+
+	$('.order_btn').click(function(){ //弹窗
+		$('.deposit_Tan').addClass('active');
+		$('.bg').addClass('active');
+	})
+	$('.deposit_Tan .top img').click(function () {
+		$('.deposit_Tan').removeClass('active');
+		$('.bg').removeClass('active');
+	})
+
+
+
+
+ 		// $(".deposit_Btn").click(function(){
+   //          var val=$('input:radio[name="pattern"]:checked').val();
+   //          if(val==null){
+   //              alert("什么也没选中!");
+   //              return false;
+   //          }
+   //          else{
+   //              alert(val);
+   //              val.parents('Pattern_list').children('li')
+   //          }         
+   //       });
+
+		// $('.Pattern_list').children('li').click(function(){
+			// var t =$(this).parents('left').text()
+			// console.log(t)
+			alert(123)
+		// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

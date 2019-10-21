@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<title>我的钱包</title>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="ind_bg">
+	
+	<div class="purse_top">
+		<p class="zong_money">总余额（元）</p>
+		<p class="money">0.00</p>
+		<p class="tixian">可提现：0.00（元）</p>
+	</div>
+	
+	<div class="my_list">
+		<ul>
+			<li class="clear">
+				<a href="purse_particulars.html">
+					<div class="fl title">
+						<p>明细</p>
+					</div>
+					<div class="fr right_img">
+						<img src="images/my_rightlist.png">
+					</div>
+				</a>
+			</li>
+			<li class="clear deposit">
+					<div class="fl title">
+						<p>提现</p>
+					</div>
+					<div class="fr right_img">
+						<img src="images/my_rightlist.png">
+					</div>
+			</li>
+		</ul>
+	</div>
+<!-- 提现弹窗 -->
+<div class="deposit_Tan">
+	<div class="top">
+		<img src="images/del.png">
+		<p class="title">确认提现</p>
+	</div>
+	<div class="tan_money">
+		<p class="title">提现金额</p>
+		<p class="money">￥0.00</p>
+	</div>
+	<div class="tan_bottom">
+		<p class="keyi">可提现金额：0.00元</p>
+		<p class="fangshi_title">提现方式</p>
+		<div class="zhifubao_list clear">
+			<label>
+				<div class="left">
+					<p><img src="images/zhifubao.png">支付宝</p>
+				</div>
+				<div class="right">
+					<input type="radio" name="radio" value="1" checked="checked">
+				</div>
+			</label>
+			
+		</div>
+		<div class="weixin_list clear">
+			<label>
+				<div class="left">
+					<p><img src="images/weixin.png">微信</p>
+				</div>
+				<div class="right">
+					<input type="radio" name="radio" value="2">
+				</div>
+			</label>
+			
+		</div>
+	</div>
+	<div class="deposit_Btn">
+		<p>立即提现</p>
+	</div>
+</div>
+<div class="bg"></div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="swiper/swiper.min.js"></script>
+<script type="text/javascript" src="js/ind.js"></script>
+<script type="text/javascript">
+	$('.deposit').click(function () {
+		$('.deposit_Tan').addClass('active');
+		$('.bg').addClass('active');
+	})
+	$('.deposit_Tan .top img').click(function () {
+		$('.deposit_Tan').removeClass('active');
+		$('.bg').removeClass('active');
+	})
+
+
+</script>
+</body>
+</html>

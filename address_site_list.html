@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<title>管理收货地址</title>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body style="background: #fff;">
+
+
+		<div class="site_list_box">
+				<div class="site_list">
+				<a href="order.html">
+					<div class="site_content">
+						<div class="name_tel">
+							<div class="name">
+								<p>收货人：小仙女</p>
+							</div>
+							<div class="tel">
+								<p>13912312104</p>
+							</div>
+						</div>
+						<p class="site">收货地址：河南省郑州市金水区东风东路与如意西路交叉口东南角建业总部港B座三楼</p>
+					</div>
+				</a>
+				</div>
+				<div class="site_list_bottom">
+					<div class="moren">
+						<p><label><input type="radio" name="site" checked="checked">默认地址</label></p>
+					</div>
+					<div class="bianji">
+						<a href="address_site.html">
+							<p><img src="images/bianji.png">编辑</p>
+						</a>
+					</div>
+					<div class="delete">
+						<p><img src="images/shanchu.png">删除</p>
+					</div>
+				</div>
+		</div>
+		
+
+
+
+
+
+
+
+<div class="none_list" style="display: none;">
+	<img src="images/none_site.png">
+	<p>暂无收货地址</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="h100"></div>
+
+<div class="add_site_btn">
+	<a href="address_site.html">
+		<div class="site_btn">
+			<p>添加收货地址</p>
+		</div>
+	</a>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="swiper/swiper.min.js"></script>
+<script type="text/javascript" src="js/ind.js"></script>
+<script type="text/javascript">
+	$(function () {
+			var site_list_len =$('.site_list_box').length
+			if(site_list_len == 0){
+				$('.none_list').css('display','block')
+			}else{
+				$('.none_list').css('display','none')
+			}
+		$('.delete').click(function(){
+			$(this).parents('.site_list_box').remove();
+			// alert(a)
+			var site_list_len =$('.site_list_box').length
+
+			if(site_list_len == 0){
+				$('.none_list').css('display','block')
+			}else{
+				$('.none_list').css('display','none')
+			}
+		})
+	})
+	
+</script>
+</body>
+</html>
